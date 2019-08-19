@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<style>
+.wrapper{
+        /* background: url('../static/imgs/a.jpg') */
+    }
+.masked1{
+    mask: url("#myMask1");
+}
+.masked2{
+    mask: url("#myMask2");
+}
+#myText {
+font-size: 125px;
+font-style: bold;
+fill: #000;
+}
+</style>
+<body>
+    <div id="demo">
+        <!-- <div id="circle"></div> -->
+        <div class="wrapper">
+                <svg id="Svg" style="position:relative">
+                    <!-- <defs>
+                        <mask id="myMask1">
+                                <path d="M0 152.5 L550 152.5" style="stroke-width: 5;" stroke="#fff"></path>
+                                <circle cx='270' cy="150" r="20"></circle>
+                        </mask>
+                        <mask id="myMask2">
+                                <path d="M275 0 L275 142.5 M275 162.5 L275 305" stroke="#FFF" style="stroke-width: 5;"></path>
+                                <circle cx='270' cy="150" r="20"></circle>
+                        </mask>
+                    </defs>
+                    <rect class="masked1" width="600" height="400" x="0" y="0" fill="blue"></rect>
+                    <rect class="masked2" width="600" height="400" x="0" y="0" fill="red"></rect> -->
+                </svg>
+        </div>
+    </div>
+    <div style="width:100%;height:30px;display:flex;align-items: center;flex-direction: row">
+        <button style="width: 100px; height:30px;line-height: 30px;text-align: center;" id="reset">重置</button>
+       <button style="width: 100px; height:30px;line-height: 30px;text-align: center;" id="btn">锁定</button>
+       <button style="width: 100px; height:30px;line-height: 30px;text-align: center;" id="hidebtnH">隐藏水平线</button>
+       <button style="width: 100px; height:30px;line-height: 30px;text-align: center;" id="hidebtnV">隐藏垂直线</button>
+       <button style="width: 100px; height:30px;line-height: 30px;text-align: center;" id="showbtnH">显示水平线</button>
+       <button style="width: 100px; height:30px;line-height: 30px;text-align: center;" id="showbtnV">显示垂直线</button>
+       <button style="width: 100px; height:30px;line-height: 30px;text-align: center;" id="rotate">旋转</button>
+    </div>
+   
+    <script src="../src/libs/snap.svg-min.js"></script>
+    <script src="../dist/index.js"></script>
+</body>
+</html>

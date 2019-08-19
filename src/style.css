@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ccc;
+}
+#circle{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+    background-color: blue;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+#Svg, #Svg2{
+    width: 550px;
+    height: 50vh;
+    border: 1px solid #ccc;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 550px;
+    padding: 100px;
+    background-color: antiquewhite;
+}
